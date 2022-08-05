@@ -10,7 +10,7 @@ import com.idat.tareabodega.dto.ProductoDTO;
 @FeignClient(name="idat_producto", url="localhost:8090")
 public interface OpenFeignClient {
 
-	@GetMapping("/api/v1/alumno/listar")
+	@GetMapping("/producto")
 	public List<ProductoDTO> listadoProductos();
 	
 }
